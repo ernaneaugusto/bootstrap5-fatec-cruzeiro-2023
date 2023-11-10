@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turbine seu negócio online: Dominando o Bootstrap 5 para desenvolvimento de sites de sucesso</title>
+
+    <style>
+        body {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(90deg,
+                    rgba(0, 132, 255, 1) 0%,
+                    rgba(0, 45, 147, 1) 89%,
+                    rgba(0, 32, 106, 1) 100%);
+        }
+
+        h1 {
+            color: blue;
+            font-family: sans-serif, serif;
+        }
+
+        h2 {
+            color: #0084ff;
+        }
+
+        h1,
+        h2,
+        button {
+            font-family: sans-serif, serif;
+        }
+
+        button {
+            background-color: #00c968;
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .card {
+            border-radius: 8px;
+            padding: 4rem 2rem;
+            border: 1px solid #ccc;
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>Turbine seu negócio online:</h1>
+        <h2>Dominando o Bootstrap 5 para desenvolvimento de sites de sucesso</h2>
+
+        <button id="button">Cadastrar</button>
+    </div>
+
+    <script>
+        const element = document.getElementById("button");
+        element.addEventListener("click", registerUser);
+
+        function registerUser() {
+            const isRegister = confirm(`Você confirma seu cadastro no Curso
+             'Turbine seu negócio online: Dominando o Bootstrap 5 para 
+             desenvolvimento de sites de sucesso'`);
+
+            if (isRegister === true) {
+                alert(`Parabéns! Você está cadastrado no nosso curso.`);
+            } else {
+                alert(`Sem problemas! Você pode concluir seu cadastro mais tarde : D`);
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

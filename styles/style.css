@@ -1,0 +1,9 @@
+@media screen and (max-width: 992px) {
+    .image-75-mobile {
+        width: 75%;
+    }
+    .image-center {
+        display: block;
+        margin: 0 auto;
+    }
+}
